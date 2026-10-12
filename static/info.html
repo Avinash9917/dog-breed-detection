@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CanineLens | Model Architecture &amp; Benchmark Performance</title>
+  <meta name="description" content="Academic evaluation metrics and deep learning benchmark comparisons on the Stanford Dogs dataset (EfficientNetB0 vs CNN vs ANN).">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <!-- FX HOOK: 3D Mascot & Sensory FX Stylesheet -->
+  <link rel="stylesheet" href="/static/css/fx.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20y=%220%22%20width=%22100%22%20height=%22100%22><text%20y=%22.9em%22%20font-size=%2290%22>🐕</text></svg>">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/" class="brand-link" aria-label="CanineLens Home">
+        <span class="brand-icon" aria-hidden="true">🐾</span>
+        <span class="brand-title">CanineLens</span>
+      </a>
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="/" class="nav-item">Classifier</a>
+        <a href="/info" class="nav-item active" aria-current="page">
+          <span>Model Info</span>
+          <span class="nav-badge">Metrics</span>
+        </a>
+        <!-- FX HOOK: Master Effects Toggle Button -->
+        <button type="button" id="fxToggleBtn" class="fx-toggle-btn" aria-label="Toggle sensory effects on or off">
+          <span class="fx-indicator-dot"></span>
+          <span>Effects: On</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <section class="hero-section">
+      <div class="hero-pill">
+        <span>📊</span>
+        <span>Empirical Study &amp; Evaluation</span>
+      </div>
+      <h1 class="hero-title">
+        Model Architecture &amp; <span class="gradient-text">Benchmark Results</span>
+      </h1>
+      <p class="hero-desc">
+        Comparative evaluation of three deep learning paradigms evaluated on 8,580 unseen canine test images from the official Stanford Dogs benchmark.
+      </p>
+    </section>
+
+    <!-- Key Metrics Grid (Loaded dynamically from /api/info) -->
+    <section class="metrics-grid" aria-label="Model Performance Metrics">
+      <div class="stat-card">
+        <div id="statTop1" class="stat-number">--.-%</div>
+        <div class="stat-label">EfficientNet Top-1 Accuracy</div>
+      </div>
+      <div class="stat-card">
+        <div id="statTop5" class="stat-number">--.-%</div>
+        <div class="stat-label">EfficientNet Top-5 Accuracy</div>
+      </div>
+      <div class="stat-card">
+        <div id="statTestImages" class="stat-number">----</div>
+        <div class="stat-label">Unseen Test Images Evaluated</div>
+      </div>
+      <div class="stat-card">
+        <div id="statTestLoss" class="stat-number">-.----</div>
+        <div class="stat-label">Cross-Entropy Test Loss</div>
+      </div>
+    </section>
+
+    <!-- Comparative Paradigm Study -->
+    <section class="glass-card" style="margin-bottom: 2.5rem;">
+      <h2 class="section-heading">
+        <span>🔬</span>
+        <span>Deep Learning Paradigm Comparison</span>
+      </h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+        All three models were trained and evaluated on the exact same stratified data splits. Below are the verified test results extracted directly from <code>metrics.json</code>:
+      </p>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table" aria-label="Comparative Accuracy Table">
+          <thead>
+            <tr>
+              <th scope="col">Model Architecture</th>
+              <th scope="col">Paradigm</th>
+              <th scope="col">Top-1 Accuracy</th>
+              <th scope="col">Top-5 Accuracy</th>
+              <th scope="col">Key Architectural Trait</th>
+            </tr>
+          </thead>
+          <tbody id="comparisonTableBody">
+            <!-- Dynamically populated rows -->
+            <tr>
+              <td>Baseline ANN (MLP)</td>
+              <td>Fully Connected</td>
+              <td id="annTop1">--</td>
+              <td id="annTop5">--</td>
+              <td>Flattened 150k inputs; lacks spatial locality</td>
+            </tr>
+            <tr>
+              <td>Custom CNN</td>
+              <td>From-Scratch Convolutions</td>
+              <td id="cnnTop1">--</td>
+              <td id="cnnTop5">--</td>
+              <td>4 Conv blocks; spatial hierarchies</td>
+            </tr>
+            <tr class="highlight-row">
+              <td><strong>EfficientNetB0 (Transfer Learning)</strong></td>
+              <td><strong>Pre-trained ImageNet-1k</strong></td>
+              <td id="effTop1"><strong>--</strong></td>
+              <td id="effTop5"><strong>--</strong></td>
+              <td><strong>Compound scaling + two-stage fine-tuning</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Comparative Bar Visualizer -->
+      <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem;">Visual Top-1 Performance Comparison</h3>
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.25rem;">
+            <span>ANN Baseline</span>
+            <span id="barAnnLabel">--%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div id="barAnn" class="progress-bar-fill" style="width: 0%; background: #64748b;"></div>
+          </div>
+        </div>
+
+        <div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.25rem;">
+            <span>Custom CNN</span>
+            <span id="barCnnLabel">--%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div id="barCnn" class="progress-bar-fill" style="width: 0%; background: #f59e0b;"></div>
+          </div>
+        </div>
+
+        <div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.25rem;">
+            <span>EfficientNetB0 (Transfer Learning)</span>
+            <span id="barEffLabel">--%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div id="barEff" class="progress-bar-fill" style="width: 0%; background: var(--accent-gradient);"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology & Interpretability -->
+    <section class="glass-card">
+      <h2 class="section-heading">
+        <span>🧠</span>
+        <span>Methodology &amp; Interpretability (Grad-CAM)</span>
+      </h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+        <div>
+          <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem; color: #818cf8;">Two-Stage Fine-Tuning</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            Phase 1 freezes the pre-trained ImageNet backbone to train the custom dense classification head (Adam, $\eta=10^{-3}$).
+            Phase 2 unfreezes the top 30 convolutional layers for discriminative fine-tuning at a low learning rate (Adam, $\eta=10^{-5}$), preserving lower-level edge/texture detectors while tailoring high-level canine representations.
+          </p>
+        </div>
+
+        <div>
+          <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem; color: #818cf8;">Grad-CAM Feature Saliency</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            Gradient-Weighted Class Activation Mapping computes the gradient of the predicted breed score with respect to the feature activation maps of layer <code>top_conv</code>.
+            This highlights the exact anatomical regions (ears, snout shape, coat pattern) driving the model's prediction.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p class="footer-disclaimer">
+      🎓 <strong>Educational Research Project</strong> &bull; Developed for fine-grained canine breed recognition.<br>
+      For educational purposes only. Not veterinary or official breed-certification advice.
+    </p>
+  </footer>
+
+  <!-- FX HOOK: FX Controller for global effects toggle -->
+  <script src="/static/js/fx.js"></script>
+  <script src="/static/js/info.js"></script>
+</body>
+</html>

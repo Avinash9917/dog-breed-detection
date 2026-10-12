@@ -1,0 +1,368 @@
+/* ==========================================================================
+   CanineLens - 3D Mascot, Speech & Sensory FX Styles
+   ========================================================================== */
+
+/* --- FX Toggle Button in Navigation --- */
+.fx-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  color: #c7d2fe;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.fx-toggle-btn:hover {
+  background: rgba(99, 102, 241, 0.3);
+  border-color: #818cf8;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
+}
+
+.fx-toggle-btn.fx-off {
+  background: rgba(148, 163, 184, 0.12);
+  border-color: rgba(148, 163, 184, 0.3);
+  color: #94a3b8;
+}
+
+.fx-indicator-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  display: inline-block;
+}
+
+.fx-toggle-btn.fx-off .fx-indicator-dot {
+  background-color: #ef4444;
+  box-shadow: none;
+}
+
+/* --- Optional Background Video --- */
+.bg-video-container {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -2;
+  pointer-events: none;
+}
+
+.bg-video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.18;
+  filter: saturate(1.2) blur(2px);
+}
+
+/* --- Confetti Overlay Canvas --- */
+#confettiCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* --- Mascot Companion Section --- */
+.mascot-wrapper {
+  margin-bottom: 2rem;
+  animation: mascotFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes mascotFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.mascot-card {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.82), rgba(15, 23, 42, 0.88));
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 36px -10px rgba(0, 0, 0, 0.5), 0 0 24px -6px rgba(99, 102, 241, 0.18);
+  backdrop-filter: blur(16px);
+  position: relative;
+  overflow: hidden;
+}
+
+.mascot-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #818cf8, #ec4899, transparent);
+}
+
+.mascot-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mascot-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  letter-spacing: 0.02em;
+}
+
+.mascot-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 10px #38bdf8;
+  animation: pulseDot 2s infinite ease-in-out;
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+
+.mascot-disclaimer-badge {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  background: rgba(148, 163, 184, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  font-style: italic;
+}
+
+/* Mascot Layout: 3D Canvas + Speech Bubble */
+.mascot-body-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1.75rem;
+  align-items: center;
+}
+
+/* 3D Canvas Container */
+.dog3d-container {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 16px;
+  background: radial-gradient(circle at center, rgba(99, 102, 241, 0.12) 0%, transparent 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  touch-action: none;
+}
+
+.dog3d-container:active {
+  cursor: grabbing;
+}
+
+.dog3d-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+  outline: none;
+  border-radius: 16px;
+}
+
+/* --- Speech Bubble Styling --- */
+.speech-bubble {
+  position: relative;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(129, 140, 248, 0.35);
+  border-radius: 18px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  animation: speechPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes speechPop {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}
+
+/* Chat bubble arrow pointing to mascot */
+.speech-bubble-tail {
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 12px solid rgba(129, 140, 248, 0.35);
+}
+
+.speech-bubble-tail::after {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 1px;
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-right: 11px solid rgba(15, 23, 42, 0.95);
+}
+
+.speech-bubble-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.speech-speaker-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #a5b4fc;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.speech-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.speech-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #e2e8f0;
+  padding: 0.25rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.speech-btn:hover {
+  background: rgba(99, 102, 241, 0.25);
+  border-color: #818cf8;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.speech-btn.active-muted {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.4);
+  color: #fca5a5;
+}
+
+.speech-caption {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #f8fafc;
+  font-weight: 450;
+  letter-spacing: 0.01em;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 860px) {
+  .mascot-body-layout {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .dog3d-container {
+    width: 220px;
+    height: 220px;
+  }
+
+  .speech-bubble-tail {
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  .speech-caption {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mascot-card {
+    padding: 1rem;
+  }
+
+  .mascot-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .speech-controls {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .dog3d-container {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* --- Reduced Motion Accessibility --- */
+@media (prefers-reduced-motion: reduce) {
+  .mascot-wrapper {
+    animation: none !important;
+  }
+  .speech-bubble {
+    animation: none !important;
+  }
+  .mascot-dot {
+    animation: none !important;
+  }
+  .bg-video-element {
+    display: none !important;
+  }
+  #confettiCanvas {
+    display: none !important;
+  }
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CanineLens | Dog Breed Detection &amp; Explainability System</title>
+  <meta name="description" content="College deep learning research project: identify 120 dog breeds using EfficientNetB0 transfer learning with Grad-CAM explainability and breed trait profiles.">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <!-- FX HOOK: 3D Mascot & Sensory FX Stylesheet -->
+  <link rel="stylesheet" href="/static/css/fx.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20y=%220%22%20width=%22100%22%20height=%22100%22><text%20y=%22.9em%22%20font-size=%2290%22>🐕</text></svg>">
+</head>
+<body>
+
+  <!-- Interactive 3D Background Canvas -->
+  <canvas id="bgCanvas3D"></canvas>
+
+  <!-- Demo Mode Banner (Dynamically injected if model is missing) -->
+  <div id="demoBanner" class="demo-banner" style="display: none;" role="alert">
+    <span>⚠️</span>
+    <span id="demoBannerText">DEMO MODE ACTIVE: Trained model file is missing. Showing simulated benchmark responses.</span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/" class="brand-link" aria-label="CanineLens Home">
+        <span class="brand-icon" aria-hidden="true">🐾</span>
+        <span class="brand-title">CanineLens</span>
+      </a>
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="/" class="nav-item active" aria-current="page">Classifier</a>
+        <a href="/info" class="nav-item">
+          <span>Model Info</span>
+          <span class="nav-badge">Metrics</span>
+        </a>
+        <!-- FX HOOK: Master Effects Toggle Button -->
+        <button type="button" id="fxToggleBtn" class="fx-toggle-btn" aria-label="Toggle sensory effects on or off">
+          <span class="fx-indicator-dot"></span>
+          <span>Effects: On</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Hero Title with 3D Float -->
+    <section class="hero-section">
+      <div class="hero-pill">
+        <span>🔬</span>
+        <span>Stanford Dogs Dataset (120 Breeds)</span>
+      </div>
+      <h1 class="hero-title">
+        Identify Any Canine with <span class="gradient-text">Deep Learning</span>
+      </h1>
+      <p class="hero-desc">
+        Take a live photo or upload an image to identify purebred dogs, visualize model focus with 3D Grad-CAM explainability, and explore verified breed traits.
+      </p>
+    </section>
+
+    <!-- Upload & Interactive Card with 3D Tilt -->
+    <section class="glass-card upload-grid" aria-labelledby="uploadHeading">
+      <h2 id="uploadHeading" class="sr-only" style="display: none;">Upload Image</h2>
+      
+      <!-- Drag & Drop Zone -->
+      <div id="dropzone" class="dropzone-container" tabindex="0" role="button" aria-label="Upload dog photo dropzone">
+        <div class="dropzone-icon" aria-hidden="true">📸</div>
+        <h3 class="dropzone-title">Drag &amp; Drop Canine Photo Here</h3>
+        <p class="dropzone-hint">Supports high-res JPG, PNG, or WebP up to 5 MB</p>
+        
+        <div class="upload-actions">
+          <button type="button" id="browseBtn" class="btn btn-secondary" aria-label="Browse files on device">
+            <span>📁</span>
+            <span>Browse Files</span>
+          </button>
+          
+          <button type="button" id="cameraBtn" class="btn btn-primary btn-3d-pulse" aria-label="Open Camera to Take Photo">
+            <span>📷</span>
+            <span>Take Photo</span>
+          </button>
+        </div>
+
+        <!-- Hidden File Inputs -->
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" style="display: none;">
+        <input type="file" id="cameraInput" accept="image/jpeg,image/png,image/webp" capture="environment" style="display: none;">
+      </div>
+
+      <!-- Preview & Submission Panel -->
+      <div id="previewPanel" class="preview-panel">
+        <div class="preview-content">
+          <div class="preview-img-wrapper">
+            <img id="previewImg" src="" alt="Selected dog image preview">
+          </div>
+          <div class="preview-meta">
+            <div id="previewName" class="preview-filename">image.jpg</div>
+            <div id="previewSize" class="preview-filesize">0 KB</div>
+            <button type="button" id="clearBtn" class="btn btn-secondary btn-sm" aria-label="Remove image">
+              <span>✕</span>
+              <span>Remove</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="options-strip">
+          <!-- Grad-CAM Toggle -->
+          <label class="toggle-wrapper" title="Generates Gradient-weighted Class Activation Map overlay to interpret model decision">
+            <input type="checkbox" id="gradcamToggle" class="toggle-input">
+            <span class="toggle-switch"></span>
+            <span class="toggle-label">🔍 Show what the model looked at (Grad-CAM)</span>
+          </label>
+
+          <!-- Submit Button -->
+          <button type="button" id="predictBtn" class="btn btn-primary" aria-label="Classify Dog Breed">
+            <span>⚡</span>
+            <span>Identify Breed</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 3D Holographic AI Scanner & Loading State -->
+      <div id="loadingIndicator" class="loading-indicator" role="status" aria-live="polite">
+        <div class="scanner-3d-box">
+          <div class="scanner-3d-ring"></div>
+          <div class="scanner-3d-ring-inner"></div>
+          <div class="scanner-3d-laser"></div>
+          <div class="scanner-3d-icon">🐕</div>
+        </div>
+        <div id="loadingStatusText" class="loading-text">Analyzing canine features...</div>
+        <p id="loadingSubtext" class="loading-subtext">Running MobileNetV2 gatekeeper &amp; EfficientNetB0 classification</p>
+      </div>
+
+    </section>
+
+    <!-- Results Section with 3D Depth -->
+    <section id="resultsSection" class="results-container" aria-labelledby="resultsHeading">
+      <h2 id="resultsHeading" class="sr-only" style="display: none;">Classification Results</h2>
+
+      <!-- FX HOOK: Interactive 3D Mascot & Talking Dog Assistant -->
+      <div id="mascotWrapper" class="mascot-wrapper" style="display: none;">
+        <div class="mascot-card glass-card">
+          <div class="mascot-card-header">
+            <span class="mascot-status-pill"><span class="mascot-dot"></span> CanineLens AI Companion</span>
+            <span class="mascot-disclaimer-badge">Illustrative mascot, not an exact breed model</span>
+          </div>
+          
+          <div class="mascot-body-layout">
+            <!-- 3D Mascot Canvas Container -->
+            <div id="dog3dContainer" class="dog3d-container"></div>
+            
+            <!-- Speech Bubble & Narration Controls -->
+            <div id="speechBubble" class="speech-bubble" style="display: none;">
+              <div class="speech-bubble-tail"></div>
+              <div class="speech-bubble-header">
+                <span class="speech-speaker-name">🐾 Buddy (AI Pup)</span>
+                <div class="speech-controls">
+                  <button type="button" id="speechReplayBtn" class="speech-btn" title="Replay voice narration" aria-label="Replay voice narration">🔄 Replay</button>
+                  <button type="button" id="speechMuteBtn" class="speech-btn" title="Toggle voice mute" aria-label="Toggle voice mute">🔊 Mute</button>
+                  <button type="button" id="speechStopBtn" class="speech-btn" title="Stop speaking" aria-label="Stop speaking">⏹️ Stop</button>
+                </div>
+              </div>
+              <div id="speechCaption" class="speech-caption" aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Not a Dog Rejection Alert -->
+      <div id="notDogAlert" class="alert-box alert-danger" style="display: none;" role="alert">
+        <div class="alert-icon">⚠️</div>
+        <div>
+          <strong>This doesn't look like a dog.</strong>
+          <p id="notDogDesc">Our ImageNet canine filter did not detect sufficient canine anatomical features in this image. Please upload a clear photo of a dog.</p>
+        </div>
+      </div>
+
+      <!-- Low Confidence Mixed Breed Alert -->
+      <div id="lowConfidenceAlert" class="alert-box alert-warning" style="display: none;" role="alert">
+        <div class="alert-icon">ℹ️</div>
+        <div>
+          <strong>Not sure, this may be a mixed breed.</strong>
+          <p id="lowConfidenceDesc">The top predicted confidence is below 50%. Note that this model is trained on purebred dogs from the Stanford Dogs dataset.</p>
+        </div>
+      </div>
+
+      <!-- Main Showcase Card with 3D Tilt -->
+      <div id="showcaseCard" class="glass-card showcase-card" style="display: none;">
+        <!-- Left: Image View (Original vs Grad-CAM) -->
+        <div class="showcase-image-col">
+          <div class="main-image-frame">
+            <img id="resultMainImage" src="" alt="Predicted dog breed view">
+          </div>
+          <div id="imageSwitchTabs" class="image-switch-tabs" style="display: none;">
+            <button type="button" id="tabOriginal" class="tab-btn active">Original Photo</button>
+            <button type="button" id="tabGradcam" class="tab-btn">Model Focus (Grad-CAM)</button>
+          </div>
+        </div>
+
+        <!-- Right: Breed Breakdown -->
+        <div class="showcase-details-col">
+          <div class="breed-badge-group">
+            <span class="rank-badge">Top-1 Prediction</span>
+            <span id="topConfidenceBadge" class="confidence-badge">95.4% Confidence</span>
+          </div>
+
+          <h2 id="topBreedName" class="top-breed-name">Chihuahua</h2>
+          <div id="breedOriginPill" class="breed-origin-pill">
+            <span>📍 Origin:</span>
+            <span id="breedOriginText">Mexico</span>
+          </div>
+
+          <!-- Top-3 Candidate Probabilities -->
+          <div class="candidates-block">
+            <h3 class="candidates-title">Candidate Probability Distribution</h3>
+            <div id="candidatesList">
+              <!-- Dynamically rendered candidate rows -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trait Card -->
+      <div id="traitsCard" class="glass-card traits-card" style="display: none;">
+        <h3 class="section-heading">
+          <span>📋</span>
+          <span>Verified Breed Trait Profile</span>
+        </h3>
+
+        <div class="traits-grid">
+          <div class="trait-item">
+            <div class="trait-label">Size Category</div>
+            <div id="traitSize" class="trait-value">-</div>
+          </div>
+          <div class="trait-item">
+            <div class="trait-label">Weight Range</div>
+            <div id="traitWeight" class="trait-value">-</div>
+          </div>
+          <div class="trait-item">
+            <div class="trait-label">Height Range</div>
+            <div id="traitHeight" class="trait-value">-</div>
+          </div>
+          <div class="trait-item">
+            <div class="trait-label">Lifespan Expectancy</div>
+            <div id="traitLifespan" class="trait-value">-</div>
+          </div>
+          <div class="trait-item">
+            <div class="trait-label">Energy Level</div>
+            <div id="traitEnergy" class="trait-value">-</div>
+          </div>
+          <div class="trait-item">
+            <div class="trait-label">Grooming Needs</div>
+            <div id="traitGrooming" class="trait-value">-</div>
+          </div>
+          <div class="trait-item">
+            <div class="trait-label">Good with Children</div>
+            <div id="traitKids" class="trait-value">-</div>
+          </div>
+          <div class="trait-item" style="grid-column: 1 / -1;">
+            <div class="trait-label">Temperament</div>
+            <div id="traitTemperament" class="temperament-tags">
+              <!-- Dynamic tags -->
+            </div>
+          </div>
+        </div>
+
+        <div id="traitDescription" class="trait-description">
+          <!-- Description text -->
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Interactive 3D Camera Capture Modal -->
+  <div id="cameraModal" class="camera-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="cameraModalTitle">
+    <div class="camera-modal-backdrop" id="cameraBackdrop"></div>
+    <div class="camera-modal-card">
+      <div class="camera-modal-header">
+        <div class="camera-title-badge">
+          <span class="live-pulse"></span>
+          <h3 id="cameraModalTitle">Live Canine Camera</h3>
+        </div>
+        <button type="button" id="closeCameraBtn" class="camera-close-btn" aria-label="Close camera">✕</button>
+      </div>
+      
+      <div class="camera-viewport-wrapper">
+        <video id="cameraVideo" autoplay playsinline muted></video>
+        <canvas id="cameraCanvas" style="display: none;"></canvas>
+        
+        <!-- 3D Holographic Viewfinder Overlay -->
+        <div class="camera-hud-overlay">
+          <div class="hud-corner top-left"></div>
+          <div class="hud-corner top-right"></div>
+          <div class="hud-corner bottom-left"></div>
+          <div class="hud-corner bottom-right"></div>
+          <div class="hud-reticle">
+            <div class="reticle-ring"></div>
+            <div class="reticle-dot"></div>
+          </div>
+          <div class="hud-scanline"></div>
+          <div class="hud-status">AI CANINE SCANNER &bull; READY</div>
+        </div>
+      </div>
+
+      <div class="camera-controls">
+        <button type="button" id="switchCameraBtn" class="btn btn-secondary" style="display: none;">
+          <span>🔄</span>
+          <span>Flip Camera</span>
+        </button>
+        <button type="button" id="capturePhotoBtn" class="btn btn-primary btn-3d-pulse">
+          <span>📸</span>
+          <span>Capture Dog Photo</span>
+        </button>
+        <button type="button" id="cancelCameraBtn" class="btn btn-secondary">
+          <span>Cancel</span>
+        </button>
+      </div>
+
+      <div id="cameraErrorMessage" class="camera-error-msg" style="display: none;"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p class="footer-disclaimer">
+      🎓 <strong>Educational Research Project</strong> &bull; Developed for fine-grained canine breed recognition.<br>
+      For educational purposes only. Not veterinary or official breed-certification advice.
+    </p>
+  </footer>
+
+  <!-- FX HOOK: Three.js Offline 3D Engine & Loaders -->
+  <script src="/static/vendor/three.min.js"></script>
+  <script src="/static/vendor/GLTFLoader.js"></script>
+  
+  <!-- FX HOOK: 3D Mascot, Speech Narration & Master Controller -->
+  <script src="/static/js/dog3d.js"></script>
+  <script src="/static/js/speech.js"></script>
+  <script src="/static/js/fx.js"></script>
+
+  <!-- Baseline Core Application -->
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

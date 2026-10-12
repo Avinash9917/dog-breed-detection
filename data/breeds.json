@@ -1,0 +1,2045 @@
+{
+  "_meta": {
+    "_note": "Curated by AI using kennel club standards (AKC/FCI/UKC). All unverified or uncertain attributes are explicitly set to null. Spot-check recommended."
+  },
+  "Chihuahua": {
+    "size": "Toy",
+    "weight_range_kg": "1.5 - 3.0",
+    "height_range_cm": "15 - 23",
+    "temperament": [
+      "Charming",
+      "Graceful",
+      "Sassy",
+      "Alert"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Low",
+    "good_with_kids": false,
+    "lifespan_years": "14 - 18",
+    "origin": "Mexico",
+    "description": "A graceful, tiny compact dog with large expressive eyes and huge personality."
+  },
+  "Japanese_spaniel": {
+    "size": "Toy",
+    "weight_range_kg": "3.0 - 5.0",
+    "height_range_cm": "20 - 28",
+    "temperament": [
+      "Charming",
+      "Noble",
+      "Affectionate",
+      "Cat-like"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 14",
+    "origin": "Japan",
+    "description": "Also known as the Japanese Chin, an aristocratic companion bred for Japanese nobility."
+  },
+  "Maltese_dog": {
+    "size": "Toy",
+    "weight_range_kg": "2.0 - 4.0",
+    "height_range_cm": "20 - 25",
+    "temperament": [
+      "Gentle",
+      "Playful",
+      "Affectionate",
+      "Trusting"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "Mediterranean Basin / Malta",
+    "description": "An ancient lapdog known for its silky white floor-length coat and lively, gentle demeanor."
+  },
+  "Pekinese": {
+    "size": "Toy",
+    "weight_range_kg": "3.2 - 6.4",
+    "height_range_cm": "15 - 23",
+    "temperament": [
+      "Affectionate",
+      "Loyal",
+      "Regal",
+      "Opinionated"
+    ],
+    "energy_level": "Low",
+    "grooming_needs": "High",
+    "good_with_kids": false,
+    "lifespan_years": "12 - 14",
+    "origin": "China",
+    "description": "A compact, lion-like companion dog revered in the imperial palaces of ancient China."
+  },
+  "Shih-Tzu": {
+    "size": "Toy",
+    "weight_range_kg": "4.0 - 7.5",
+    "height_range_cm": "20 - 28",
+    "temperament": [
+      "Affectionate",
+      "Playful",
+      "Outgoing",
+      "Friendly"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 16",
+    "origin": "Tibet / China",
+    "description": "A beloved companion breed known as the 'Little Lion Dog' with a luxurious double coat."
+  },
+  "Blenheim_spaniel": {
+    "size": "Toy",
+    "weight_range_kg": "5.5 - 8.2",
+    "height_range_cm": "30 - 33",
+    "temperament": [
+      "Affectionate",
+      "Gentle",
+      "Graceful",
+      "Playful"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "United Kingdom",
+    "description": "The red-and-white variety of the Cavalier King Charles Spaniel, bred as aristocratic lapdogs."
+  },
+  "papillon": {
+    "size": "Toy",
+    "weight_range_kg": "2.3 - 4.5",
+    "height_range_cm": "20 - 28",
+    "temperament": [
+      "Alert",
+      "Energetic",
+      "Friendly",
+      "Intelligent"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "13 - 16",
+    "origin": "France / Belgium",
+    "description": "Named for butterfly-like fringed ears, this toy spaniel is one of the most agile and trainable breeds."
+  },
+  "toy_terrier": {
+    "size": "Toy",
+    "weight_range_kg": "1.5 - 3.5",
+    "height_range_cm": "25 - 30",
+    "temperament": [
+      "Spirited",
+      "Alert",
+      "Courageous",
+      "Loyal"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Low",
+    "good_with_kids": false,
+    "lifespan_years": "13 - 15",
+    "origin": "United Kingdom",
+    "description": "Also known as the English Toy Terrier (Black and Tan), a miniature ratter with keen instincts."
+  },
+  "Rhodesian_ridgeback": {
+    "size": "Large",
+    "weight_range_kg": "32.0 - 39.0",
+    "height_range_cm": "61 - 69",
+    "temperament": [
+      "Dignified",
+      "Intelligent",
+      "Strong-willed",
+      "Loyal"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "Southern Africa / Zimbabwe",
+    "description": "Originally bred to track lions, recognizable by the distinctive ridge of backward hair on its spine."
+  },
+  "Afghan_hound": {
+    "size": "Large",
+    "weight_range_kg": "23.0 - 27.0",
+    "height_range_cm": "64 - 74",
+    "temperament": [
+      "Aloof",
+      "Dignified",
+      "Independent",
+      "Sweet"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "High",
+    "good_with_kids": null,
+    "lifespan_years": "12 - 14",
+    "origin": "Afghanistan",
+    "description": "An aristocratic sighthound with a silky flowing coat and exotic oriental facial expression."
+  },
+  "basset": {
+    "size": "Medium",
+    "weight_range_kg": "20.0 - 29.0",
+    "height_range_cm": "28 - 38",
+    "temperament": [
+      "Patient",
+      "Gentle",
+      "Affectionate",
+      "Tenacious"
+    ],
+    "energy_level": "Low",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "France / United Kingdom",
+    "description": "A short-legged scent hound with heavy bone, long velvety ears, and unmatched tracking scent ability."
+  },
+  "beagle": {
+    "size": "Small",
+    "weight_range_kg": "9.0 - 13.5",
+    "height_range_cm": "33 - 41",
+    "temperament": [
+      "Friendly",
+      "Curious",
+      "Merry",
+      "Determined"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "United Kingdom",
+    "description": "A popular, compact scenthound with a keen nose, musical voice, and cheerful disposition."
+  },
+  "bloodhound": {
+    "size": "Large",
+    "weight_range_kg": "36.0 - 50.0",
+    "height_range_cm": "58 - 69",
+    "temperament": [
+      "Gentle",
+      "Affectionate",
+      "Stubborn",
+      "Patient"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "Western Europe (France / Belgium)",
+    "description": "Renowned for the keenest sense of smell among all dogs, celebrated as tireless man-trailers."
+  },
+  "bluetick": {
+    "size": "Large",
+    "weight_range_kg": "20.0 - 36.0",
+    "height_range_cm": "53 - 69",
+    "temperament": [
+      "Active",
+      "Friendly",
+      "Intelligent",
+      "Tenacious"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "11 - 12",
+    "origin": "United States",
+    "description": "The Bluetick Coonhound is a fast, nocturnal scenthound with a mottled dark blue coat."
+  },
+  "black-and-tan_coonhound": {
+    "size": "Large",
+    "weight_range_kg": "29.0 - 45.0",
+    "height_range_cm": "58 - 69",
+    "temperament": [
+      "Easygoing",
+      "Bright",
+      "Brave",
+      "Friendly"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "United States",
+    "description": "A trail-and-tree hound known for tracking raccoons and big game through rugged wilderness."
+  },
+  "Walker_hound": {
+    "size": "Large",
+    "weight_range_kg": "23.0 - 32.0",
+    "height_range_cm": "51 - 69",
+    "temperament": [
+      "Confident",
+      "Clever",
+      "Brave",
+      "Affectionate"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 13",
+    "origin": "United States",
+    "description": "Treeing Walker Coonhound is a fast, agile hound with a ringing bugle bark and striking tricolor coat."
+  },
+  "English_foxhound": {
+    "size": "Large",
+    "weight_range_kg": "27.0 - 34.0",
+    "height_range_cm": "58 - 64",
+    "temperament": [
+      "Gentle",
+      "Sociable",
+      "Active",
+      "Tolerant"
+    ],
+    "energy_level": "Very High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 13",
+    "origin": "United Kingdom",
+    "description": "A pack-hunting hound bred for stamina, speed, and harmony within large packs."
+  },
+  "redbone": {
+    "size": "Large",
+    "weight_range_kg": "20.0 - 32.0",
+    "height_range_cm": "53 - 66",
+    "temperament": [
+      "Even-tempered",
+      "Affectionate",
+      "Eager to please",
+      "Energetic"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "11 - 12",
+    "origin": "United States",
+    "description": "Redbone Coonhound is famous for its gorgeous rich red coat, agility, and sweet temperament."
+  },
+  "borzoi": {
+    "size": "Large",
+    "weight_range_kg": "27.0 - 48.0",
+    "height_range_cm": "66 - 76",
+    "temperament": [
+      "Quiet",
+      "Gentle",
+      "Athletic",
+      "Independent"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": null,
+    "lifespan_years": "10 - 12",
+    "origin": "Russia",
+    "description": "A regal Russian sighthound formerly used to hunt wolves, boasting a silky wavy coat and high speed."
+  },
+  "Irish_wolfhound": {
+    "size": "Giant",
+    "weight_range_kg": "48.0 - 82.0",
+    "height_range_cm": "76 - 89",
+    "temperament": [
+      "Gentle",
+      "Courageous",
+      "Calm",
+      "Affectionate"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "6 - 8",
+    "origin": "Ireland",
+    "description": "The tallest of all AKC breeds, an imposing ancient hunter known as a gentle giant."
+  },
+  "Italian_greyhound": {
+    "size": "Toy",
+    "weight_range_kg": "3.2 - 5.0",
+    "height_range_cm": "33 - 38",
+    "temperament": [
+      "Affectionate",
+      "Playful",
+      "Alert",
+      "Sensitive"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Low",
+    "good_with_kids": null,
+    "lifespan_years": "14 - 15",
+    "origin": "Mediterranean / Italy",
+    "description": "A miniature sighthound with graceful high-stepping gait, loving personality, and sleek coat."
+  },
+  "whippet": {
+    "size": "Medium",
+    "weight_range_kg": "11.0 - 18.0",
+    "height_range_cm": "46 - 56",
+    "temperament": [
+      "Affectionate",
+      "Quiet",
+      "Gentle",
+      "Athletic"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "United Kingdom",
+    "description": "Known as the poor man's racehorse, capable of bursts up to 35 mph, yet gentle indoor couch potatoes."
+  },
+  "Ibizan_hound": {
+    "size": "Large",
+    "weight_range_kg": "20.0 - 23.0",
+    "height_range_cm": "57 - 70",
+    "temperament": [
+      "Playful",
+      "Independent",
+      "Active",
+      "Polite"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "11 - 14",
+    "origin": "Balearic Islands / Spain",
+    "description": "An ancient sighthound with striking large erect ears and remarkable vertical jumping ability."
+  },
+  "Norwegian_elkhound": {
+    "size": "Medium",
+    "weight_range_kg": "22.0 - 25.0",
+    "height_range_cm": "49 - 52",
+    "temperament": [
+      "Bold",
+      "Playful",
+      "Alert",
+      "Loyal"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 14",
+    "origin": "Norway",
+    "description": "An ancient Viking companion dog with a silvery-grey coat, curled tail, and courage to hold moose and bears."
+  },
+  "otterhound": {
+    "size": "Large",
+    "weight_range_kg": "36.0 - 52.0",
+    "height_range_cm": "61 - 69",
+    "temperament": [
+      "Amiable",
+      "Boisterous",
+      "Even-tempered",
+      "Inquisitive"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 13",
+    "origin": "United Kingdom",
+    "description": "A rare British scenthound with rough coat, webbed feet, and powerful swimming ability."
+  },
+  "Saluki": {
+    "size": "Large",
+    "weight_range_kg": "18.0 - 27.0",
+    "height_range_cm": "58 - 71",
+    "temperament": [
+      "Gentle",
+      "Aloof",
+      "Dignified",
+      "Independent"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Low",
+    "good_with_kids": null,
+    "lifespan_years": "12 - 14",
+    "origin": "Middle East / Fertile Crescent",
+    "description": "One of the oldest dog breeds in existence, treasured by pharaohs and nomadic desert tribes for incredible speed."
+  },
+  "Scottish_deerhound": {
+    "size": "Giant",
+    "weight_range_kg": "34.0 - 50.0",
+    "height_range_cm": "71 - 81",
+    "temperament": [
+      "Gentle",
+      "Dignified",
+      "Polite",
+      "Quiet"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "8 - 11",
+    "origin": "Scotland",
+    "description": "Bred to pursue majestic red deer in the Scottish Highlands; gentle, calm, and devoted at home."
+  },
+  "Weimaraner": {
+    "size": "Large",
+    "weight_range_kg": "25.0 - 40.0",
+    "height_range_cm": "58 - 70",
+    "temperament": [
+      "Friendly",
+      "Fearless",
+      "Alert",
+      "Obedient"
+    ],
+    "energy_level": "Very High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 13",
+    "origin": "Germany",
+    "description": "The 'Gray Ghost' was bred by German royalty as an all-around hunting dog with striking silver-gray coat."
+  },
+  "Staffordshire_bullterrier": {
+    "size": "Medium",
+    "weight_range_kg": "11.0 - 17.0",
+    "height_range_cm": "36 - 41",
+    "temperament": [
+      "Courageous",
+      "Intelligent",
+      "Loyal",
+      "Affectionate"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 14",
+    "origin": "United Kingdom",
+    "description": "Nicknamed the 'Nanny Dog' in Britain for its patient and loving nature with children."
+  },
+  "American_Staffordshire_terrier": {
+    "size": "Medium",
+    "weight_range_kg": "18.0 - 32.0",
+    "height_range_cm": "43 - 48",
+    "temperament": [
+      "Confident",
+      "Smart",
+      "Good-natured",
+      "Loyal"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 16",
+    "origin": "United States",
+    "description": "A muscular, broad-headed breed known for boundless affection toward family and steadfast loyalty."
+  },
+  "Bedlington_terrier": {
+    "size": "Small",
+    "weight_range_kg": "7.7 - 10.4",
+    "height_range_cm": "38 - 44",
+    "temperament": [
+      "Loyal",
+      "Playful",
+      "Intelligent",
+      "Affectionate"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "11 - 16",
+    "origin": "United Kingdom",
+    "description": "Famous for its lamb-like appearance, pear-shaped head, and non-shedding woolly coat."
+  },
+  "Border_terrier": {
+    "size": "Small",
+    "weight_range_kg": "5.2 - 7.0",
+    "height_range_cm": "30 - 40",
+    "temperament": [
+      "Affectionate",
+      "Plucky",
+      "Intelligent",
+      "Alert"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "Scotland / England border",
+    "description": "A sturdy working terrier with an otter-shaped head, bred to bolt foxes from burrows."
+  },
+  "Kerry_blue_terrier": {
+    "size": "Medium",
+    "weight_range_kg": "15.0 - 18.0",
+    "height_range_cm": "44 - 51",
+    "temperament": [
+      "Smart",
+      "Alert",
+      "Spirited",
+      "Loyal"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "Ireland",
+    "description": "An all-around farm dog with a distinctive soft blue-gray wavy coat and animated terrier spirit."
+  },
+  "Irish_terrier": {
+    "size": "Medium",
+    "weight_range_kg": "11.0 - 12.5",
+    "height_range_cm": "45 - 51",
+    "temperament": [
+      "Courageous",
+      "Spirited",
+      "Tenderhearted",
+      "Loyal"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "13 - 15",
+    "origin": "Ireland",
+    "description": "Nicknamed 'Daredevil' for supreme bravery; affectionate with family and fiercely protective."
+  },
+  "Norfolk_terrier": {
+    "size": "Small",
+    "weight_range_kg": "5.0 - 5.5",
+    "height_range_cm": "23 - 25",
+    "temperament": [
+      "Fearless",
+      "Affectionate",
+      "Sociable",
+      "Alert"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 16",
+    "origin": "United Kingdom",
+    "description": "One of the smallest working terriers, distinguished by folded drop ears and a weather-resistant wiry jacket."
+  },
+  "Norwich_terrier": {
+    "size": "Small",
+    "weight_range_kg": "5.0 - 5.5",
+    "height_range_cm": "23 - 25",
+    "temperament": [
+      "Affectionate",
+      "Curious",
+      "Alert",
+      "Gregarious"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "United Kingdom",
+    "description": "Nearly identical to the Norfolk Terrier but distinguished by its erect, prick ears."
+  },
+  "Yorkshire_terrier": {
+    "size": "Toy",
+    "weight_range_kg": "2.0 - 3.2",
+    "height_range_cm": "18 - 23",
+    "temperament": [
+      "Sprightly",
+      "Tomboyish",
+      "Affectionate",
+      "Confident"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "High",
+    "good_with_kids": null,
+    "lifespan_years": "11 - 15",
+    "origin": "United Kingdom",
+    "description": "A feisty, glamorous toy terrier with a floor-length steel blue and tan human-like coat."
+  },
+  "wire-haired_fox_terrier": {
+    "size": "Small",
+    "weight_range_kg": "6.8 - 8.6",
+    "height_range_cm": "36 - 39",
+    "temperament": [
+      "Alert",
+      "Quick",
+      "Keen",
+      "Fearless"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "United Kingdom",
+    "description": "A classic show terrier with a broken, wiry coat, short back, and spirited enthusiasm."
+  },
+  "Lakeland_terrier": {
+    "size": "Small",
+    "weight_range_kg": "7.0 - 8.0",
+    "height_range_cm": "33 - 38",
+    "temperament": [
+      "Bold",
+      "Friendly",
+      "Confident",
+      "Intelligent"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 16",
+    "origin": "United Kingdom (Lake District)",
+    "description": "Bred to protect sheep flocks from rocky crags foxes, sturdy, fearless, and non-shedding."
+  },
+  "Sealyham_terrier": {
+    "size": "Small",
+    "weight_range_kg": "8.0 - 11.0",
+    "height_range_cm": "27 - 30",
+    "temperament": [
+      "Alert",
+      "Outgoing",
+      "Calm",
+      "Funny"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 14",
+    "origin": "Wales, United Kingdom",
+    "description": "A low-slung Welsh terrier with a lush white fall of hair over its eyes and humor in its demeanor."
+  },
+  "Airedale": {
+    "size": "Large",
+    "weight_range_kg": "23.0 - 32.0",
+    "height_range_cm": "56 - 61",
+    "temperament": [
+      "Friendly",
+      "Clever",
+      "Courageous",
+      "Alert"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "11 - 14",
+    "origin": "United Kingdom (Yorkshire)",
+    "description": "Known as the 'King of Terriers', the largest terrier breed, adept at hunting, guarding, and agility."
+  },
+  "cairn": {
+    "size": "Small",
+    "weight_range_kg": "6.0 - 8.0",
+    "height_range_cm": "25 - 30",
+    "temperament": [
+      "Alert",
+      "Cheerful",
+      "Curious",
+      "Hardy"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "13 - 15",
+    "origin": "Scotland",
+    "description": "The plucky Scottish breed made famous by 'Toto' in The Wizard of Oz, bred to hunt quarry in rock piles."
+  },
+  "Australian_terrier": {
+    "size": "Small",
+    "weight_range_kg": "6.5 - 9.0",
+    "height_range_cm": "25 - 28",
+    "temperament": [
+      "Courageous",
+      "Spirited",
+      "Affectionate",
+      "Loyal"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "Australia",
+    "description": "A tough, spirited little exterminator and watchdog developed in tough Australian bush terrain."
+  },
+  "Dandie_Dinmont": {
+    "size": "Small",
+    "weight_range_kg": "8.0 - 11.0",
+    "height_range_cm": "20 - 28",
+    "temperament": [
+      "Independent",
+      "Smart",
+      "Plucky",
+      "Gentle"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "Scotland",
+    "description": "Recognizable by its long curved body, silky topknot of hair, and deep baritone bark."
+  },
+  "Boston_bull": {
+    "size": "Small",
+    "weight_range_kg": "5.5 - 11.0",
+    "height_range_cm": "38 - 43",
+    "temperament": [
+      "Friendly",
+      "Bright",
+      "Amusing",
+      "Gentle"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "11 - 13",
+    "origin": "United States",
+    "description": "The Boston Terrier, nicknamed 'The American Gentleman' for its immaculate tuxedo jacket coat."
+  },
+  "miniature_schnauzer": {
+    "size": "Small",
+    "weight_range_kg": "5.0 - 9.0",
+    "height_range_cm": "30 - 36",
+    "temperament": [
+      "Friendly",
+      "Intelligent",
+      "Obedient",
+      "Alert"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "Germany",
+    "description": "Popular farm ratter and watchdog boasting human-like walrus mustache and bristly eyebrows."
+  },
+  "giant_schnauzer": {
+    "size": "Large",
+    "weight_range_kg": "25.0 - 48.0",
+    "height_range_cm": "60 - 70",
+    "temperament": [
+      "Loyal",
+      "Alert",
+      "Trainable",
+      "Powerful"
+    ],
+    "energy_level": "Very High",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "Germany (Bavaria)",
+    "description": "A commanding working dog historically used for cattle driving and police work."
+  },
+  "standard_schnauzer": {
+    "size": "Medium",
+    "weight_range_kg": "14.0 - 23.0",
+    "height_range_cm": "44 - 50",
+    "temperament": [
+      "Smart",
+      "Fearless",
+      "Spirited",
+      "Loyal"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "13 - 16",
+    "origin": "Germany",
+    "description": "The prototype schnauzer: an intelligent, all-around Bavarian farm dog with strong protective instincts."
+  },
+  "Scotch_terrier": {
+    "size": "Small",
+    "weight_range_kg": "8.0 - 10.0",
+    "height_range_cm": "25 - 28",
+    "temperament": [
+      "Independent",
+      "Confident",
+      "Alert",
+      "Dignified"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "High",
+    "good_with_kids": null,
+    "lifespan_years": "12 - 15",
+    "origin": "Scotland",
+    "description": "The Scottish Terrier, or 'Scottie', an iconic stubborn, independent breed with deep beard and furnishings."
+  },
+  "Tibetan_terrier": {
+    "size": "Medium",
+    "weight_range_kg": "8.0 - 14.0",
+    "height_range_cm": "36 - 41",
+    "temperament": [
+      "Affectionate",
+      "Loyal",
+      "Gentle",
+      "Clever"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "15 - 16",
+    "origin": "Tibet",
+    "description": "An ancient holy dog of Tibetan monasteries, featuring unique snowshoe-like round flat feet."
+  },
+  "silky_terrier": {
+    "size": "Toy",
+    "weight_range_kg": "4.0 - 5.0",
+    "height_range_cm": "23 - 25",
+    "temperament": [
+      "Alert",
+      "Inquisitive",
+      "Quick",
+      "Friendly"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": null,
+    "lifespan_years": "13 - 15",
+    "origin": "Australia",
+    "description": "A close relative of the Yorkshire and Australian terriers with fine, glassy silk hair."
+  },
+  "soft-coated_wheaten_terrier": {
+    "size": "Medium",
+    "weight_range_kg": "14.0 - 18.0",
+    "height_range_cm": "43 - 48",
+    "temperament": [
+      "Happy",
+      "Steady",
+      "Playful",
+      "Devoted"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 14",
+    "origin": "Ireland",
+    "description": "Famous for the exuberant 'Wheaten Greeting' and a luxuriant, single warm-wheat coat."
+  },
+  "West_Highland_white_terrier": {
+    "size": "Small",
+    "weight_range_kg": "6.8 - 9.1",
+    "height_range_cm": "25 - 28",
+    "temperament": [
+      "Friendly",
+      "Hardy",
+      "Confident",
+      "Alert"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "13 - 15",
+    "origin": "Scotland",
+    "description": "The 'Westie', an active Scottish ratter with an all-white harsh coat, carrot-shaped tail, and dark eyes."
+  },
+  "Lhasa": {
+    "size": "Small",
+    "weight_range_kg": "5.5 - 8.0",
+    "height_range_cm": "25 - 28",
+    "temperament": [
+      "Confident",
+      "Smart",
+      "Comical",
+      "Aloof with strangers"
+    ],
+    "energy_level": "Low",
+    "grooming_needs": "High",
+    "good_with_kids": null,
+    "lifespan_years": "12 - 15",
+    "origin": "Tibet",
+    "description": "Lhasa Apso was an indoor temple sentinel in Buddhist monasteries with a flowing parted coat."
+  },
+  "flat-coated_retriever": {
+    "size": "Large",
+    "weight_range_kg": "27.0 - 36.0",
+    "height_range_cm": "56 - 62",
+    "temperament": [
+      "Optimistic",
+      "Playful",
+      "Outgoing",
+      "Affectionate"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "8 - 10",
+    "origin": "United Kingdom",
+    "description": "The Peter Pan of gundogs, retaining puppy exuberance throughout life with a shimmering black or liver coat."
+  },
+  "curly-coated_retriever": {
+    "size": "Large",
+    "weight_range_kg": "27.0 - 43.0",
+    "height_range_cm": "64 - 69",
+    "temperament": [
+      "Clever",
+      "Proud",
+      "Confident",
+      "Independent"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "United Kingdom",
+    "description": "One of the oldest retriever breeds, characterized by a tight water-repellent crisp curl coat."
+  },
+  "golden_retriever": {
+    "size": "Large",
+    "weight_range_kg": "25.0 - 34.0",
+    "height_range_cm": "53 - 61",
+    "temperament": [
+      "Intelligent",
+      "Friendly",
+      "Devoted",
+      "Reliable"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "Scotland, United Kingdom",
+    "description": "One of the world's most beloved family and service dogs, prized for gentle mouth, obedience, and beauty."
+  },
+  "Labrador_retriever": {
+    "size": "Large",
+    "weight_range_kg": "25.0 - 36.0",
+    "height_range_cm": "55 - 62",
+    "temperament": [
+      "Friendly",
+      "Active",
+      "Outgoing",
+      "Gentle"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "Canada / United Kingdom",
+    "description": "America's longest-reigning #1 breed, an athletic water dog with an 'otter' tail and kind demeanor."
+  },
+  "Chesapeake_Bay_retriever": {
+    "size": "Large",
+    "weight_range_kg": "25.0 - 36.0",
+    "height_range_cm": "53 - 66",
+    "temperament": [
+      "Affectionate",
+      "Bright",
+      "Courageous",
+      "Protective"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 13",
+    "origin": "United States (Chesapeake Bay)",
+    "description": "Tough water retriever renowned for retrieving waterfowl in icy, churning Atlantic waters."
+  },
+  "German_short-haired_pointer": {
+    "size": "Large",
+    "weight_range_kg": "20.0 - 32.0",
+    "height_range_cm": "53 - 64",
+    "temperament": [
+      "Friendly",
+      "Intelligent",
+      "Willing to please",
+      "Energetic"
+    ],
+    "energy_level": "Very High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "Germany",
+    "description": "Versatile aristocratic gundog capable of pointing, tracking, and retrieving on land or in water."
+  },
+  "vizsla": {
+    "size": "Medium",
+    "weight_range_kg": "20.0 - 30.0",
+    "height_range_cm": "53 - 64",
+    "temperament": [
+      "Affectionate",
+      "Energetic",
+      "Gentle",
+      "Loyal"
+    ],
+    "energy_level": "Very High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 14",
+    "origin": "Hungary",
+    "description": "The golden-rust Hungarian pointer, nicknamed the 'Velcro dog' for forming deep attachments to family."
+  },
+  "English_setter": {
+    "size": "Large",
+    "weight_range_kg": "20.0 - 36.0",
+    "height_range_cm": "61 - 69",
+    "temperament": [
+      "Gentle",
+      "Affectionate",
+      "Friendly",
+      "Mellow"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "United Kingdom",
+    "description": "The 'gentleman of the dog world', distinguished by elegant flecked coat patterns known as 'belton'."
+  },
+  "Irish_setter": {
+    "size": "Large",
+    "weight_range_kg": "27.0 - 32.0",
+    "height_range_cm": "61 - 69",
+    "temperament": [
+      "Outgoing",
+      "Sweet-natured",
+      "Active",
+      "Playful"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "Ireland",
+    "description": "Renowned for its gleaming mahogany red coat, aristocratic carriage, and exuberant, rollicking spirit."
+  },
+  "Gordon_setter": {
+    "size": "Large",
+    "weight_range_kg": "25.0 - 36.0",
+    "height_range_cm": "58 - 69",
+    "temperament": [
+      "Confident",
+      "Fearless",
+      "Alert",
+      "Loyal"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "11 - 13",
+    "origin": "Scotland",
+    "description": "The heaviest of the setters, possessing a striking coal-black coat with rich chestnut markings."
+  },
+  "Brittany_spaniel": {
+    "size": "Medium",
+    "weight_range_kg": "14.0 - 18.0",
+    "height_range_cm": "44 - 52",
+    "temperament": [
+      "Bright",
+      "Quick",
+      "Eager to please",
+      "Tireless"
+    ],
+    "energy_level": "Very High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 14",
+    "origin": "France (Brittany)",
+    "description": "An energetic, agile bird dog prized by sports enthusiasts for its keen nose and boundless stamina."
+  },
+  "clumber": {
+    "size": "Large",
+    "weight_range_kg": "25.0 - 39.0",
+    "height_range_cm": "43 - 51",
+    "temperament": [
+      "Gentle",
+      "Loyal",
+      "Affectionate",
+      "Dignified"
+    ],
+    "energy_level": "Low",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "United Kingdom",
+    "description": "The Clumber Spaniel is the largest flushing spaniel: heavy-boned, slow-paced, and mellow-tempered."
+  },
+  "English_springer": {
+    "size": "Medium",
+    "weight_range_kg": "18.0 - 23.0",
+    "height_range_cm": "48 - 51",
+    "temperament": [
+      "Friendly",
+      "Playful",
+      "Obedient",
+      "Affectionate"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 14",
+    "origin": "United Kingdom",
+    "description": "English Springer Spaniel is an enthusiastic hunter and wonderful family dog known for springing game."
+  },
+  "Welsh_springer_spaniel": {
+    "size": "Medium",
+    "weight_range_kg": "16.0 - 25.0",
+    "height_range_cm": "46 - 48",
+    "temperament": [
+      "Active",
+      "Loyal",
+      "Affectionate",
+      "Reserved with strangers"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "Wales, United Kingdom",
+    "description": "Recognizable by its rich red-and-white coat, tireless hunting drive, and devoted companionship."
+  },
+  "cocker_spaniel": {
+    "size": "Small",
+    "weight_range_kg": "9.0 - 14.0",
+    "height_range_cm": "34 - 39",
+    "temperament": [
+      "Gentle",
+      "Smart",
+      "Happy",
+      "Sweet"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 14",
+    "origin": "United States",
+    "description": "American Cocker Spaniel with big soulful eyes, lush feathering, and merry, tail-wagging attitude."
+  },
+  "Sussex_spaniel": {
+    "size": "Medium",
+    "weight_range_kg": "16.0 - 20.0",
+    "height_range_cm": "33 - 38",
+    "temperament": [
+      "Calm",
+      "Cheerful",
+      "Devoted",
+      "Placid"
+    ],
+    "energy_level": "Low",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "11 - 13",
+    "origin": "United Kingdom",
+    "description": "A long, low flushing spaniel with a distinctive rich golden-liver coat and rolling gait."
+  },
+  "Irish_water_spaniel": {
+    "size": "Large",
+    "weight_range_kg": "20.0 - 30.0",
+    "height_range_cm": "53 - 61",
+    "temperament": [
+      "Playful",
+      "Brave",
+      "Intelligent",
+      "Alert"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "Ireland",
+    "description": "The clown of the spaniel family, known for its dense liver curls, topknot, and smooth 'rat tail'."
+  },
+  "kuvasz": {
+    "size": "Large",
+    "weight_range_kg": "32.0 - 52.0",
+    "height_range_cm": "66 - 76",
+    "temperament": [
+      "Protective",
+      "Loyal",
+      "Patient",
+      "Courageous"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "Hungary",
+    "description": "An ancient flock guardian of Hungarian royalty with a striking dense white coat and noble bearing."
+  },
+  "schipperke": {
+    "size": "Small",
+    "weight_range_kg": "4.5 - 7.5",
+    "height_range_cm": "25 - 33",
+    "temperament": [
+      "Confident",
+      "Alert",
+      "Curious",
+      "Mischievous"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "13 - 15",
+    "origin": "Belgium",
+    "description": "The 'little captain' barge watchdog of Belgium with a fox-like head and thick black ruff."
+  },
+  "groenendael": {
+    "size": "Large",
+    "weight_range_kg": "20.0 - 30.0",
+    "height_range_cm": "56 - 66",
+    "temperament": [
+      "Intelligent",
+      "Protective",
+      "Devoted",
+      "Alert"
+    ],
+    "energy_level": "Very High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 14",
+    "origin": "Belgium",
+    "description": "The Belgian Sheepdog, a proud and graceful herder with a long, dense black coat and bright intelligence."
+  },
+  "malinois": {
+    "size": "Large",
+    "weight_range_kg": "20.0 - 34.0",
+    "height_range_cm": "56 - 66",
+    "temperament": [
+      "Confident",
+      "Smart",
+      "Hardworking",
+      "Vigilant"
+    ],
+    "energy_level": "Very High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "14 - 16",
+    "origin": "Belgium",
+    "description": "The world's premier military and police working dog, prized for supreme drive, agility, and loyalty."
+  },
+  "briard": {
+    "size": "Large",
+    "weight_range_kg": "25.0 - 45.0",
+    "height_range_cm": "56 - 69",
+    "temperament": [
+      "Loyal",
+      "Smart",
+      "Spirit of a warrior",
+      "Gentle"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "France",
+    "description": "An ancient French herder with a long beard and eyebrows, described as 'a heart wrapped in fur'."
+  },
+  "kelpie": {
+    "size": "Medium",
+    "weight_range_kg": "14.0 - 21.0",
+    "height_range_cm": "43 - 51",
+    "temperament": [
+      "Loyal",
+      "Alert",
+      "Energetic",
+      "Intelligent"
+    ],
+    "energy_level": "Very High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "Australia",
+    "description": "A legendary Australian sheep herding dog capable of running atop the backs of sheep in crowded pens."
+  },
+  "komondor": {
+    "size": "Giant",
+    "weight_range_kg": "36.0 - 60.0",
+    "height_range_cm": "65 - 76",
+    "temperament": [
+      "Calm",
+      "Brave",
+      "Devoted",
+      "Protective"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "High",
+    "good_with_kids": null,
+    "lifespan_years": "10 - 12",
+    "origin": "Hungary",
+    "description": "The king of livestock guardians, famous for its unique heavy white dreadlock cords resembling a mop."
+  },
+  "Old_English_sheepdog": {
+    "size": "Large",
+    "weight_range_kg": "27.0 - 45.0",
+    "height_range_cm": "53 - 61",
+    "temperament": [
+      "Adaptable",
+      "Gentle",
+      "Intelligent",
+      "Playful"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "United Kingdom",
+    "description": "A shaggy, bear-like drover's dog with a famous shuffling 'bear-roll' gait and resonant bark."
+  },
+  "Shetland_sheepdog": {
+    "size": "Small",
+    "weight_range_kg": "6.8 - 11.3",
+    "height_range_cm": "33 - 41",
+    "temperament": [
+      "Playful",
+      "Energetic",
+      "Bright",
+      "Eager to please"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 14",
+    "origin": "Scotland (Shetland Islands)",
+    "description": "The 'Sheltie', an agile and brilliant small herder resembling a miniature Rough Collie."
+  },
+  "collie": {
+    "size": "Large",
+    "weight_range_kg": "23.0 - 34.0",
+    "height_range_cm": "56 - 66",
+    "temperament": [
+      "Devoted",
+      "Graceful",
+      "Proud",
+      "Intelligent"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 14",
+    "origin": "Scotland",
+    "description": "The immortalized 'Lassie' breed: gentle, devoted family protector with a wedge-shaped clean head."
+  },
+  "Border_collie": {
+    "size": "Medium",
+    "weight_range_kg": "14.0 - 20.0",
+    "height_range_cm": "46 - 56",
+    "temperament": [
+      "Smart",
+      "Energetic",
+      "Responsive",
+      "Tenacious"
+    ],
+    "energy_level": "Very High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "Scotland / England border",
+    "description": "Universally recognized as the most intelligent canine breed, possessing the famous herding 'eye'."
+  },
+  "Bouvier_des_Flandres": {
+    "size": "Large",
+    "weight_range_kg": "32.0 - 45.0",
+    "height_range_cm": "59 - 68",
+    "temperament": [
+      "Affectionate",
+      "Courageous",
+      "Gentle",
+      "Loyal"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "Belgium / France",
+    "description": "A powerfully built farm workhorse formerly used for cattle herding and cart pulling."
+  },
+  "Rottweiler": {
+    "size": "Large",
+    "weight_range_kg": "36.0 - 61.0",
+    "height_range_cm": "56 - 69",
+    "temperament": [
+      "Loyal",
+      "Loving",
+      "Confident",
+      "Calm"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "9 - 10",
+    "origin": "Germany",
+    "description": "A robust, powerful guardian descended from Roman mastiffs, gentle and playful with family."
+  },
+  "German_shepherd": {
+    "size": "Large",
+    "weight_range_kg": "23.0 - 40.0",
+    "height_range_cm": "56 - 66",
+    "temperament": [
+      "Courageous",
+      "Confident",
+      "Smart",
+      "Loyal"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "7 - 10",
+    "origin": "Germany",
+    "description": "A versatile noble working dog revered globally for intelligence, devotion, and courage."
+  },
+  "Doberman": {
+    "size": "Large",
+    "weight_range_kg": "27.0 - 45.0",
+    "height_range_cm": "61 - 71",
+    "temperament": [
+      "Loyal",
+      "Fearless",
+      "Alert",
+      "Intelligent"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "Germany",
+    "description": "Sleek, muscular protector created by Louis Dobermann, famous for regal carriage and keen vigilance."
+  },
+  "miniature_pinscher": {
+    "size": "Toy",
+    "weight_range_kg": "3.6 - 4.5",
+    "height_range_cm": "25 - 32",
+    "temperament": [
+      "Fearless",
+      "Proud",
+      "Fun-loving",
+      "Curious"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Low",
+    "good_with_kids": null,
+    "lifespan_years": "12 - 16",
+    "origin": "Germany",
+    "description": "The 'King of Toys' boasts a proud hackney gait (high-stepping like a horse) and bold personality."
+  },
+  "Greater_Swiss_Mountain_dog": {
+    "size": "Giant",
+    "weight_range_kg": "39.0 - 64.0",
+    "height_range_cm": "60 - 72",
+    "temperament": [
+      "Faithful",
+      "Alert",
+      "Dependable",
+      "Gentle"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "8 - 11",
+    "origin": "Switzerland",
+    "description": "The oldest and largest of the Swiss Sennenhund breeds, bred for heavy draft work and livestock guarding."
+  },
+  "Bernese_mountain_dog": {
+    "size": "Large",
+    "weight_range_kg": "32.0 - 52.0",
+    "height_range_cm": "58 - 70",
+    "temperament": [
+      "Good-natured",
+      "Placid",
+      "Affectionate",
+      "Strong"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "7 - 10",
+    "origin": "Switzerland",
+    "description": "A calm, affectionate tricolored giant with a lush double coat, beloved for extreme gentleness."
+  },
+  "Appenzeller": {
+    "size": "Medium",
+    "weight_range_kg": "22.0 - 32.0",
+    "height_range_cm": "50 - 56",
+    "temperament": [
+      "Lively",
+      "High-spirited",
+      "Self-assured",
+      "Reliable"
+    ],
+    "energy_level": "Very High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 14",
+    "origin": "Switzerland",
+    "description": "The Appenzeller Sennenhund is an agile, barky herder and watchdog from the Swiss Alps."
+  },
+  "EntleBucher": {
+    "size": "Medium",
+    "weight_range_kg": "20.0 - 30.0",
+    "height_range_cm": "44 - 52",
+    "temperament": [
+      "Enthusiastic",
+      "Smart",
+      "Loyal",
+      "Confident"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "11 - 13",
+    "origin": "Switzerland",
+    "description": "The smallest of the Swiss Mountain Dogs, an energetic drover dog known for speed and trickiness."
+  },
+  "boxer": {
+    "size": "Large",
+    "weight_range_kg": "25.0 - 32.0",
+    "height_range_cm": "53 - 63",
+    "temperament": [
+      "Playful",
+      "Devoted",
+      "Energetic",
+      "Friendly"
+    ],
+    "energy_level": "Very High",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "Germany",
+    "description": "An upbeat, clownish companion and vigilant watchdog with a square jaw and boundless energy."
+  },
+  "bull_mastiff": {
+    "size": "Giant",
+    "weight_range_kg": "45.0 - 59.0",
+    "height_range_cm": "61 - 69",
+    "temperament": [
+      "Affectionate",
+      "Loyal",
+      "Brave",
+      "Calm"
+    ],
+    "energy_level": "Low",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "7 - 9",
+    "origin": "United Kingdom",
+    "description": "The 'Gamekeeper's Night Dog', bred by crossing Mastiffs and Bulldogs to track and pin poachers."
+  },
+  "Tibetan_mastiff": {
+    "size": "Giant",
+    "weight_range_kg": "34.0 - 68.0",
+    "height_range_cm": "61 - 76",
+    "temperament": [
+      "Independent",
+      "Reserved",
+      "Noble",
+      "Protective"
+    ],
+    "energy_level": "Low",
+    "grooming_needs": "Moderate",
+    "good_with_kids": null,
+    "lifespan_years": "10 - 12",
+    "origin": "Tibet / Himalayas",
+    "description": "An ancient guardian of Himalayan villages and monasteries, imposing with a thick lion-like mane."
+  },
+  "French_bulldog": {
+    "size": "Small",
+    "weight_range_kg": "7.3 - 12.7",
+    "height_range_cm": "28 - 33",
+    "temperament": [
+      "Adaptable",
+      "Playful",
+      "Smart",
+      "Quiet"
+    ],
+    "energy_level": "Low",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "France / United Kingdom",
+    "description": "The world-famous 'Frenchie' with iconic bat ears, heavy wrinkles, and delightful couch-companion charm."
+  },
+  "Great_Dane": {
+    "size": "Giant",
+    "weight_range_kg": "50.0 - 79.0",
+    "height_range_cm": "71 - 86",
+    "temperament": [
+      "Friendly",
+      "Patient",
+      "Dependable",
+      "Gentle"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "7 - 10",
+    "origin": "Germany",
+    "description": "The 'Apollo of Dogs', an imposing yet remarkably sweet gentle giant originally bred to hunt boars."
+  },
+  "Saint_Bernard": {
+    "size": "Giant",
+    "weight_range_kg": "54.0 - 82.0",
+    "height_range_cm": "66 - 76",
+    "temperament": [
+      "Playful",
+      "Charming",
+      "Inquisitive",
+      "Gentle"
+    ],
+    "energy_level": "Low",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "8 - 10",
+    "origin": "Switzerland / Italy (Alps)",
+    "description": "Legendary hospice rescue dog of the Great St. Bernard Pass, famous for locating lost travelers."
+  },
+  "Eskimo_dog": {
+    "size": "Large",
+    "weight_range_kg": "27.0 - 48.0",
+    "height_range_cm": "51 - 70",
+    "temperament": [
+      "Brave",
+      "Hardworking",
+      "Alert",
+      "Loyal"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": null,
+    "lifespan_years": "10 - 15",
+    "origin": "Arctic / Canada",
+    "description": "The Canadian Eskimo Dog (Qimmiq), an indigenous Arctic sled and hunting dog capable of hauling heavy freight."
+  },
+  "malamute": {
+    "size": "Large",
+    "weight_range_kg": "34.0 - 45.0",
+    "height_range_cm": "58 - 64",
+    "temperament": [
+      "Affectionate",
+      "Loyal",
+      "Playful",
+      "Dignified"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 14",
+    "origin": "Alaska, United States",
+    "description": "Alaskan Malamute is an ancient sled dog bred for power and endurance over ice, heavy-boned and wolf-like."
+  },
+  "Siberian_husky": {
+    "size": "Medium",
+    "weight_range_kg": "16.0 - 27.0",
+    "height_range_cm": "51 - 60",
+    "temperament": [
+      "Loyal",
+      "Mischievous",
+      "Outgoing",
+      "Gentle"
+    ],
+    "energy_level": "Very High",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 14",
+    "origin": "Siberia, Russia",
+    "description": "Graceful, fast Arctic endurance sled dog famous for almond eyes of striking blue or brown."
+  },
+  "affenpinscher": {
+    "size": "Toy",
+    "weight_range_kg": "3.2 - 4.5",
+    "height_range_cm": "23 - 28",
+    "temperament": [
+      "Confident",
+      "Famously funny",
+      "Fearless",
+      "Affectionate"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": false,
+    "lifespan_years": "12 - 15",
+    "origin": "Germany",
+    "description": "The 'Monkey Terrier', comical mustachioed toy dog with a confident and bold attitude."
+  },
+  "basenji": {
+    "size": "Small",
+    "weight_range_kg": "9.0 - 11.0",
+    "height_range_cm": "41 - 43",
+    "temperament": [
+      "Independent",
+      "Smart",
+      "Poised",
+      "Quiet"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "Low",
+    "good_with_kids": null,
+    "lifespan_years": "13 - 14",
+    "origin": "Central Africa (Congo)",
+    "description": "Africa's 'Barkless Dog', known for yodeling chortles, forehead wrinkles, and cat-like cleanliness."
+  },
+  "pug": {
+    "size": "Small",
+    "weight_range_kg": "6.3 - 8.2",
+    "height_range_cm": "25 - 33",
+    "temperament": [
+      "Charming",
+      "Mischievous",
+      "Loving",
+      "Docile"
+    ],
+    "energy_level": "Low",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "13 - 15",
+    "origin": "China",
+    "description": "The motto 'multum in parvo' (a lot in a little) defines this wrinkled, curly-tailed companion."
+  },
+  "Leonberg": {
+    "size": "Giant",
+    "weight_range_kg": "41.0 - 75.0",
+    "height_range_cm": "65 - 80",
+    "temperament": [
+      "Friendly",
+      "Gentle",
+      "Playful",
+      "Dignified"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "7 - 9",
+    "origin": "Germany",
+    "description": "The Leonberger was bred to resemble the lion on the town crest of Leonberg; calm and regal."
+  },
+  "Newfoundland": {
+    "size": "Giant",
+    "weight_range_kg": "45.0 - 68.0",
+    "height_range_cm": "66 - 71",
+    "temperament": [
+      "Devoted",
+      "Patient",
+      "Sweet-natured",
+      "Gentle"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "9 - 10",
+    "origin": "Canada (Newfoundland)",
+    "description": "A sweet-tempered water dog with webbed paws, celebrated worldwide for heroic water rescues."
+  },
+  "Great_Pyrenees": {
+    "size": "Giant",
+    "weight_range_kg": "39.0 - 54.0",
+    "height_range_cm": "64 - 81",
+    "temperament": [
+      "Smart",
+      "Patient",
+      "Calm",
+      "Courageous"
+    ],
+    "energy_level": "Low",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 12",
+    "origin": "Pyrenees Mountains (France / Spain)",
+    "description": "An ancient flock guardian with a weather-resistant pure white coat and calm, watchful presence."
+  },
+  "Samoyed": {
+    "size": "Medium",
+    "weight_range_kg": "16.0 - 30.0",
+    "height_range_cm": "48 - 60",
+    "temperament": [
+      "Adaptable",
+      "Friendly",
+      "Gentle",
+      "Playful"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 14",
+    "origin": "Siberia / Arctic Russia",
+    "description": "Famous for the 'Sammy Smile' upturned lips preventing drool icicles and a fluffy white cloud coat."
+  },
+  "Pomeranian": {
+    "size": "Toy",
+    "weight_range_kg": "1.4 - 3.2",
+    "height_range_cm": "18 - 24",
+    "temperament": [
+      "Inquisitive",
+      "Bold",
+      "Lively",
+      "Affectionate"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": null,
+    "lifespan_years": "12 - 16",
+    "origin": "North-West Poland / Germany (Pomerania)",
+    "description": "A diminutive spitz breed with a glorious double coat and bright, fox-like expression."
+  },
+  "chow": {
+    "size": "Medium",
+    "weight_range_kg": "20.0 - 32.0",
+    "height_range_cm": "43 - 51",
+    "temperament": [
+      "Dignified",
+      "Bright",
+      "Serious-minded",
+      "Aloof"
+    ],
+    "energy_level": "Low",
+    "grooming_needs": "High",
+    "good_with_kids": null,
+    "lifespan_years": "8 - 12",
+    "origin": "China",
+    "description": "Ancient aristocratic Chinese breed unique for its blue-black tongue and lion-like ruff."
+  },
+  "keeshond": {
+    "size": "Medium",
+    "weight_range_kg": "16.0 - 20.0",
+    "height_range_cm": "43 - 48",
+    "temperament": [
+      "Friendly",
+      "Lively",
+      "Outgoing",
+      "Quick to learn"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "Netherlands",
+    "description": "The Dutch barge companion, identifiable by shaded spectacles markings around dark eyes."
+  },
+  "Brabancon_griffon": {
+    "size": "Toy",
+    "weight_range_kg": "3.5 - 6.0",
+    "height_range_cm": "18 - 25",
+    "temperament": [
+      "Self-important",
+      "Loyal",
+      "Curious",
+      "Affectionate"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "Belgium (Brussels)",
+    "description": "The smooth-coated variety of the Brussels Griffon with an almost human pout expression."
+  },
+  "Pembroke": {
+    "size": "Small",
+    "weight_range_kg": "10.0 - 14.0",
+    "height_range_cm": "25 - 30",
+    "temperament": [
+      "Affectionate",
+      "Smart",
+      "Alert",
+      "Courageous"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 13",
+    "origin": "Wales, United Kingdom",
+    "description": "Pembroke Welsh Corgi, beloved companion of British royalty, low-slung, powerful, and tailless."
+  },
+  "Cardigan": {
+    "size": "Small",
+    "weight_range_kg": "11.0 - 17.0",
+    "height_range_cm": "27 - 32",
+    "temperament": [
+      "Affectionate",
+      "Loyal",
+      "Smart",
+      "Alert"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Moderate",
+    "good_with_kids": true,
+    "lifespan_years": "12 - 15",
+    "origin": "Wales, United Kingdom",
+    "description": "Cardigan Welsh Corgi, the older corgi variety with large rounded ears and a full bushy fox tail."
+  },
+  "toy_poodle": {
+    "size": "Toy",
+    "weight_range_kg": "2.0 - 4.0",
+    "height_range_cm": "24 - 28",
+    "temperament": [
+      "Intelligent",
+      "Lively",
+      "Playful",
+      "Alert"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 18",
+    "origin": "Germany / France",
+    "description": "The smallest variety of the extraordinarily clever, low-dander poodle family."
+  },
+  "miniature_poodle": {
+    "size": "Small",
+    "weight_range_kg": "5.0 - 8.0",
+    "height_range_cm": "28 - 38",
+    "temperament": [
+      "Intelligent",
+      "Active",
+      "Alert",
+      "Trainable"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "10 - 18",
+    "origin": "Germany / France",
+    "description": "The mid-sized poodle: athletic, agile, hypoallergenic, and quick-witted."
+  },
+  "standard_poodle": {
+    "size": "Large",
+    "weight_range_kg": "20.0 - 32.0",
+    "height_range_cm": "45 - 60",
+    "temperament": [
+      "Proud",
+      "Active",
+      "Brilliant",
+      "Gentle"
+    ],
+    "energy_level": "High",
+    "grooming_needs": "High",
+    "good_with_kids": true,
+    "lifespan_years": "11 - 14",
+    "origin": "Germany / France",
+    "description": "The original water retriever poodle: aristocratic, exceptionally athletic, and non-shedding."
+  },
+  "Mexican_hairless": {
+    "size": "Medium",
+    "weight_range_kg": "4.0 - 14.0",
+    "height_range_cm": "25 - 51",
+    "temperament": [
+      "Calm",
+      "Alert",
+      "Loyal",
+      "Affectionate"
+    ],
+    "energy_level": "Moderate",
+    "grooming_needs": "Low",
+    "good_with_kids": true,
+    "lifespan_years": "13 - 18",
+    "origin": "Mexico",
+    "description": "The Xoloitzcuintli, an ancient Aztec sacred dog known for warm, hairless skin and peaceful demeanor."
+  },
+  "dingo": {
+    "size": "Medium",
+    "weight_range_kg": "13.0 - 20.0",
+    "height_range_cm": "52 - 60",
+    "temperament": [
+      "Wild",
+      "Independent",
+      "Alert",
+      "Cautious"
+    ],
+    "energy_level": "High",
+    "grooming_needs": null,
+    "good_with_kids": null,
+    "lifespan_years": "12 - 15",
+    "origin": "Australia",
+    "description": "An ancient lineage of wild canid native to Australia, not a domesticated pet breed."
+  },
+  "dhole": {
+    "size": "Medium",
+    "weight_range_kg": "12.0 - 18.0",
+    "height_range_cm": "42 - 55",
+    "temperament": [
+      "Wild",
+      "Pack-oriented",
+      "Elusive",
+      "Fierce"
+    ],
+    "energy_level": "Very High",
+    "grooming_needs": null,
+    "good_with_kids": null,
+    "lifespan_years": "10 - 13",
+    "origin": "Central, South, and Southeast Asia",
+    "description": "The Asiatic wild dog, a wild pack hunter capable of vocal whistling communications."
+  },
+  "African_hunting_dog": {
+    "size": "Large",
+    "weight_range_kg": "20.0 - 30.0",
+    "height_range_cm": "60 - 75",
+    "temperament": [
+      "Wild",
+      "Highly social",
+      "Intelligent",
+      "Endurance hunter"
+    ],
+    "energy_level": "Very High",
+    "grooming_needs": null,
+    "good_with_kids": null,
+    "lifespan_years": "10 - 12",
+    "origin": "Sub-Saharan Africa",
+    "description": "The African Wild Dog (Lycaon pictus), celebrated for painted coat patterns and remarkable cooperative pack hunting."
+  }
+}
