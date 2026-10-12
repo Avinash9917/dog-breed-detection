@@ -78,6 +78,18 @@ class ModelService:
         Runs dog/non-dog gatekeeper check using MobileNetV2 with mobilenet_v2.preprocess_input.
         Computes sum of probabilities over ImageNet classes 151-268 (inclusive).
         """
+        # Immediate check for blank / solid-color / featureless images
+        arr = np.array(image_pil, dtype=np.float32)
+        lum = 0.299 * arr[:, :, 0] + 0.587 * arr[:, :, 1] + 0.114 * arr[:, :, 2]
+        std_dev = float(np.std(lum))
+        if std_dev < 15.0:
+            logger.info(f"[Gatekeeper] Rejected blank/solid image (std_dev={std_dev:.2f})")
+            return False, 0.0, {
+                "dog_probability_sum": 0.0,
+                "threshold": DOG_PROBABILITY_THRESHOLD,
+                "note": "This image appears blank or has no recognizable features."
+            }
+
         if self.mobilenet is None:
             # If gatekeeper failed to load, pass through to avoid breaking
             return True, 1.0, {"note": "Gatekeeper unavailable, pass through."}
@@ -159,7 +171,7 @@ class ModelService:
             return {
                 "success": False,
                 "is_dog": False,
-                "message": "This doesn't look like a dog.",
+                "message": gatekeeper_details.get("note", "This doesn't look like a dog."),
                 "gatekeeper_details": gatekeeper_details,
                 "is_demo_mode": self.is_demo_mode
             }

@@ -130,3 +130,20 @@ def test_rate_limiter_behavior(client, real_dog_image_bytes):
     limiter.reset()
     response = client.post("/predict", files=files, headers=headers)
     assert response.status_code == 200
+
+def test_blank_image_rejection(client):
+    """Test that a blank white image is rejected by gatekeeper."""
+    from PIL import Image
+    import numpy as np
+
+    img = Image.fromarray(np.full((224, 224, 3), 255, dtype=np.uint8))
+    buf = io.BytesIO()
+    img.save(buf, format="JPEG")
+
+    files = {"file": ("blank.jpg", buf.getvalue(), "image/jpeg")}
+    response = client.post("/predict", files=files)
+    assert response.status_code == 200
+    result = response.json()
+    assert result["is_dog"] is False
+    assert "blank" in result["message"].lower() or "doesn't look like a dog" in result["message"].lower()
+
