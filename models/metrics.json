@@ -1,0 +1,12 @@
+{
+  "model_name": "EfficientNetB0 (transfer learning)",
+  "dataset": "Stanford Dogs (120 breeds)",
+  "test_images": 8580,
+  "top1_accuracy": 0.8415,
+  "top5_accuracy": 0.984,
+  "test_loss": 0.5264,
+  "ann_top1_accuracy": 0.0409,
+  "ann_top5_accuracy": 0.1703,
+  "cnn_top1_accuracy": 0.1089,
+  "cnn_top5_accuracy": 0.326
+}

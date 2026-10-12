@@ -77,22 +77,30 @@ def sanitize_filename(filename: Optional[str]) -> str:
 
 
 # ------------------------------------------------------------------------------
-# Frontend Page Routes (Serves static/index.html and static/info.html)
+# Frontend Page Routes (Serves index.html and info.html)
 # ------------------------------------------------------------------------------
 @app.get("/", include_in_schema=False)
+@app.get("/index.html", include_in_schema=False)
 async def serve_home():
+    root_index = os.path.join(os.getcwd(), "index.html")
+    if os.path.exists(root_index):
+        return FileResponse(root_index)
     index_path = STATIC_DIR / "index.html"
     if index_path.exists():
         return FileResponse(str(index_path))
-    return JSONResponse({"message": "Frontend index.html not found. Check /static/index.html."})
+    return JSONResponse({"message": "Frontend index.html not found."})
 
 
 @app.get("/info", include_in_schema=False)
+@app.get("/info.html", include_in_schema=False)
 async def serve_info():
+    root_info = os.path.join(os.getcwd(), "info.html")
+    if os.path.exists(root_info):
+        return FileResponse(root_info)
     info_path = STATIC_DIR / "info.html"
     if info_path.exists():
         return FileResponse(str(info_path))
-    return JSONResponse({"message": "Frontend info.html not found. Check /static/info.html."})
+    return JSONResponse({"message": "Frontend info.html not found."})
 
 
 # ------------------------------------------------------------------------------
@@ -194,3 +202,11 @@ async def predict_breed(
 
 # Mount Static Files (CSS, JS, assets)
 app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
+
+data_dir = os.path.join(os.getcwd(), "data")
+if os.path.exists(data_dir):
+    app.mount("/data", StaticFiles(directory=data_dir), name="data")
+
+models_dir = os.path.join(os.getcwd(), "models")
+if os.path.exists(models_dir):
+    app.mount("/models", StaticFiles(directory=models_dir), name="models")

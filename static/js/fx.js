@@ -146,7 +146,7 @@
 
       // Check if optional video exists in static/assets/videos/bg.mp4
       try {
-        const head = await fetch("/static/assets/videos/bg.mp4", { method: "HEAD" });
+        const head = await fetch("static/assets/videos/bg.mp4", { method: "HEAD" });
         if (head.ok) {
           let container = document.querySelector(".bg-video-container");
           if (!container) {
@@ -154,7 +154,7 @@
             container.className = "bg-video-container";
             container.innerHTML = `
               <video class="bg-video-element" autoplay loop muted playsinline>
-                <source src="/static/assets/videos/bg.mp4" type="video/mp4">
+                <source src="static/assets/videos/bg.mp4" type="video/mp4">
               </video>
             `;
             document.body.prepend(container);

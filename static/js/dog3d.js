@@ -142,12 +142,12 @@ class Dog3DMascot {
     let gltfLoaded = false;
     if (typeof THREE.GLTFLoader !== "undefined") {
       try {
-        const headCheck = await fetch("/static/assets/models/dog.glb", { method: "HEAD" });
+        const headCheck = await fetch("static/assets/models/dog.glb", { method: "HEAD" });
         if (headCheck.ok) {
           const loader = new THREE.GLTFLoader();
           await new Promise((resolve, reject) => {
             loader.load(
-              "/static/assets/models/dog.glb",
+              "static/assets/models/dog.glb",
               (gltf) => {
                 const model = gltf.scene;
                 model.traverse(node => {
